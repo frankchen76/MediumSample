@@ -1,0 +1,2 @@
+# MediumSample
+Medium sample code
