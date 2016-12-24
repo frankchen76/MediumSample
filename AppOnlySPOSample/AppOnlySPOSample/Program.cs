@@ -30,13 +30,14 @@ namespace AppOnlySPOSample
             //string authority = String.Format("https://login.windows.net/{0}", tenantId);
             //string certficatePath = @"c:\test.pfx"; //this is your certficate location.
             //string certificatePassword = "xxxx"; // this is your certificate password
-            
+
             //read Azure Ad setting from a file. please replace below with your own setting file. 
-            string settingJson = String.Format("{0}\\setting.settingjson", AppDomain.CurrentDomain.BaseDirectory);
+            string settingJson = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "setting.settingjson");
             AzureAdSetting setting = AzureAdSetting.CreateInstance(settingJson);
 
             //if you need to load from certficate store, use different constructors. 
-            X509Certificate2 certificate = new X509Certificate2(setting.CertficatePath, setting.CertificatePassword, X509KeyStorageFlags.MachineKeySet);
+            string certFile = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, setting.CertficatePath);
+            X509Certificate2 certificate = new X509Certificate2(certFile, setting.CertificatePassword, X509KeyStorageFlags.MachineKeySet);
             AuthenticationContext authenticationContext = new AuthenticationContext(setting.Authority, false);
 
             ClientAssertionCertificate cac = new ClientAssertionCertificate(setting.ClientId, certificate);
@@ -48,19 +49,18 @@ namespace AppOnlySPOSample
             //initialize HttpClient for REST call
             HttpClient client = new HttpClient();
             client.DefaultRequestHeaders.Add("Authorization", "Bearer " + token);
-            client.DefaultRequestHeaders.Add("Accept", "application/json");
+            client.DefaultRequestHeaders.Add("Accept", "application/json;odata=verbose");
 
             //setup the client get
             HttpResponseMessage result = await client.GetAsync(setting.ResourceUrl);
             if (result.IsSuccessStatusCode)
             {
-                //email send successfully.
-                Console.WriteLine("Email sent successfully. ");
+                string json = await result.Content.ReadAsStringAsync();
+                Console.WriteLine("SharePoint ListItem Created! {0}", json);
             }
             else
             {
-                //email send failed. check the result for detail information from REST api.
-                Console.WriteLine("Email sent failed. Error: {0}", await result.Content.ReadAsStringAsync());
+                Console.WriteLine("REST call failed. Error: {0}", await result.Content.ReadAsStringAsync());
             }
 
         }

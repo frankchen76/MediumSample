@@ -1,0 +1,76 @@
+{
+  "appId": "700c33d6-93bf-4a08-8424-c636a2a15d16",
+  "appRoles": [ ],
+  "availableToOtherTenants": false,
+  "displayName": "AzureADAppOnlyTest",
+  "errorUrl": null,
+  "groupMembershipClaims": null,
+  "homepage": "https://AzureADAppOnlyTest",
+  "identifierUris": [
+    "https://ezcode.org/a68f23f2-77ab-4aea-9672-1d2ec5da584a"
+  ],
+  "keyCredentials": [
+    {
+      "customKeyIdentifier": "GbgaqBQQjkdXj6cP4OZp24pQiR8=",
+      "keyId": "db2e4e93-a9e9-49c7-a8de-8b504ac0114f",
+      "type": "AsymmetricX509Cert",
+      "usage": "Verify",
+      "value": "MIIDLzCCAhugAwIBAgIQo7hUPvNJ34dG0dpbGIESIjAJBgUrDgMCHQUAMCgxJjAkBgNVBAMTHVRlc3RDTiBBenVyZUFEQXBwT25seVRlc3RDZXJ0MB4XDTE2MTIwMTA4MDAwMFoXDTIwMTIzMDA4MDAwMFowKDEmMCQGA1UEAxMdVGVzdENOIEF6dXJlQURBcHBPbmx5VGVzdENlcnQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDLQRYZjvCAtappDFSOLoKXBv9O5HZzqD1hexoxHQoBruKtVCLRg57FaSyqlguuMe4uxyBC8nJ3QDMK8yvcwwA3dDyoPvR7QpDJKmA/QgCOPs1tm2g1dtLFUh0pNc9iymjFjKQ6oAzSWTyoHyfLQmrab6O8caLQJJaCqdJaelKTy+5/lR0guXNG5px1vW69Nzw0LSbkHRdF6o6zMvrn+J74lcrmyJz1veD4eVN7bCzSnNJ/rkgc+akQbc8V5km+GZ/SvKA/PVMR53c6RxhJYf6YqrOdYxTKauCLPdzShcFhU0mOtc3HjYbY469iERhHDjNSKg9ag10AUoMBsR4zwDpBAgMBAAGjXTBbMFkGA1UdAQRSMFCAEEV8em4fjmJmznBeGcSIM+ahKjAoMSYwJAYDVQQDEx1UZXN0Q04gQXp1cmVBREFwcE9ubHlUZXN0Q2VydIIQo7hUPvNJ34dG0dpbGIESIjAJBgUrDgMCHQUAA4IBAQBla5IKD4QK8AgJ1h9YQyNz3X0BmR7UFp1pANCl/meBLHlHJ+Pzkb4HOlG3+JBIs5GcGyr6LHFIKYquReF7YcaH/PGrbeWCz+xBIKj1BtZ8aoOVrduX2iXCyqzmAQIdN9TlaWxlgDZHoHHVjuizAORn9/a6oDPacCmFYH15yy1za9BtE390Ej2kI3XdcaW3skH7J4qgCW2x/z7H/BQTJqWMEYovMUIyKTnrlnbl3BP+gLrMTYLgjFX4UsG1lms2YO7yWRqPdsysUGGwFtcpfjU7mhgC4jpfwBroSCSCTN3CgofsNA60trlI9ch6pGJxxQPC+oVGAMVa4h5WC9xg3+/J"
+    }
+  ],
+  "knownClientApplications": [ ],
+  "logoutUrl": null,
+  "oauth2AllowImplicitFlow": false,
+  "oauth2AllowUrlPathMatching": false,
+  "oauth2Permissions": [
+    {
+      "adminConsentDescription": "Allow the application to access AzureADAppOnlyTest on behalf of the signed-in user.",
+      "adminConsentDisplayName": "Access AzureADAppOnlyTest",
+      "id": "fc10f614-7624-4081-a9a9-4085aa51bb98",
+      "isEnabled": true,
+      "type": "User",
+      "userConsentDescription": "Allow the application to access AzureADAppOnlyTest on your behalf.",
+      "userConsentDisplayName": "Access AzureADAppOnlyTest",
+      "value": "user_impersonation"
+    }
+  ],
+  "oauth2RequirePostResponse": false,
+  "passwordCredentials": [ ],
+  "publicClient": false,
+  "replyUrls": [
+    "https://AzureADAppOnlyTest"
+  ],
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0ff1-ce00-000000000000",
+      "resourceAccess": [
+        {
+          "id": "678536fe-1083-478a-9c59-b99265e6b0d3",
+          "type": "Role"
+        }
+      ]
+    },
+    {
+      "resourceAppId": "00000002-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "311a71cc-e848-46a1-bdf8-97ff7156d8e6",
+          "type": "Scope"
+        }
+      ]
+    }
+  ],
+  "samlMetadataUrl": null,
+  "extensionProperties": [ ],
+  "objectType": "Application",
+  "objectId": "a678c502-bfc7-46e0-82a0-946424c30d63",
+  "deletionTimestamp": null,
+  "createdOnBehalfOf": null,
+  "createdObjects": [ ],
+  "manager": null,
+  "directReports": [ ],
+  "members": [ ],
+  "memberOf": [ ],
+  "owners": [ ],
+  "ownedObjects": [ ]
+}
