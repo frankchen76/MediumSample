@@ -1,0 +1,9 @@
+{
+  "name": "common-display-template-sample",
+  "version": "0.0.0",
+  "description": "CommonDisplayTemplateSample",
+  "main": "server.js",
+  "author": {
+    "name": "frank"
+  }
+}
