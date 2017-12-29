@@ -100,7 +100,6 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-    <None Include="README.md" />
     <None Include="sposettings.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
