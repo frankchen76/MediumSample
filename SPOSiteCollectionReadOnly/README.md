@@ -18,6 +18,7 @@ This is an example to demonstrate how to set a SPO site collection read-only by 
   "url": "[site url]",
   "policyName": "[Site Policy used for site collection]"
 }
+```
 
 * Change sposettings.json property to select "Copy always" or "Copy if newer" for "Copy to Output directory".
 * Create a generic credential under control panel -> Credential Manager.
