@@ -23,3 +23,6 @@ This is an example to demonstrate how to set a SPO site collection read-only by 
 * Create a generic credential under control panel -> Credential Manager.
 * Make sure you have a site policy available either on your site collection or published by Content Type Hub site collection
 * Press F5 to run your code
+
+## Link
+* For a detail information, please check out the blog [Make a SPO site collection read-only programmatically](https://medium.com/@frankchen2016/make-a-spo-site-collection-read-only-programmatically-1660ef41ae28)
