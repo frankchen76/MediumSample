@@ -25,4 +25,5 @@ This is an example to demonstrate how to set a SPO site collection read-only by 
 * Press F5 to run your code
 
 ## Link
-* For a detail information, please check out the blog [Make a SPO site collection read-only programmatically](https://medium.com/@frankchen2016/make-a-spo-site-collection-read-only-programmatically-1660ef41ae28)
+* For a detail information, please check out the blog 
+[Make a SPO site collection read-only programmatically](https://medium.com/@frankchen2016/make-a-spo-site-collection-read-only-programmatically-1660ef41ae28)
